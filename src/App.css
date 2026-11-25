@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f1e9;
+  color: #333;
+}
+
+.header {
+  background-color: #3e2723;
+  color: white;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header nav {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header nav a:hover {
+  color: #ffcc80;
+}
+
+.main {
+  background: linear-gradient(135deg, #6d4c41, #a1887f);
+  color: white;
+  padding: 100px 8%;
+  text-align: center;
+}
+
+.main-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+.main h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.main p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.main-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  background-color: #ffcc80;
+  color: #3e2723;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.main-button:hover {
+  background-color: #ffe0b2;
+}
+
+.about {
+  padding: 60px 10%;
+  text-align: center;
+  background-color: white;
+}
+
+.about h2,
+.services h2 {
+  font-size: 30px;
+  color: #5d4037;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+.services {
+  padding: 60px 8%;
+  text-align: center;
+  background-color: #efebe9;
+}
+
+.service-list {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.service-card {
+  background-color: white;
+  padding: 30px;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.service-card h3 {
+  color: #6d4c41;
+}
+
+.service-card p {
+  line-height: 1.6;
+}
+
+.footer {
+  background-color: #3e2723;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .header nav {
+    justify-content: center;
+  }
+
+  .main h2 {
+    font-size: 30px;
+  }
+
+  .main {
+    padding: 60px 5%;
+  }
+}
